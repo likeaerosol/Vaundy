@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;700&family=Playfair+Display:ital,wght@1,400;1,600&family=Roboto:wght@400;700;900&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+.title{
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 40px;
+}
+
+b{
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #F32B56;
+}
+
+.sT{
+    font-size: 0.8rem;
+    color: #3d3838;
+}
+
+
+.whiteT{color: white;}
+.orangeT{color:#FAC988;}
+.pinkT{color: #F32B56;}
+.pinkT2{color: #FE6899;}
+
+
+.mainOrange{background-color: #FAC988;}
+.mainYellow{background-color: #FCDCAD;}
+.mainPink{background-color: #F32B56;}
+.mainPink2{background-color: #FE6899;}
+.mainBack{background: linear-gradient(#FAC988, #F32B56);}
+
+
+/*-----------------------------*/
+
+
+.menuBar{
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    z-index: 2;
+}
+
+.menuLogo{
+    width: 200px;
+    height: 40px;
+    margin-left: 25px;
+}
+
+.menuLogo .colorize{
+    display: none;
+}
+.menuLogo:hover .colorize{
+    display: block;
+}
+.menuLogo:hover .static{
+    display: none;
+}
+
+.menuItems{
+    display: flex;
+    list-style: none;
+    margin-right: 20px;
+}
+
+.menuItems li{
+    padding: 10px 20px;
+    border-radius: 15px;
+    margin: 0px 20px 0px 20px;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+    transition: 1s;
+}
+
+.menuItems li a{
+    text-align: center;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+#textP{
+    font-size: 1.3rem;
+}
+
+.menuItems li:hover{
+    background: #F32B56;
+    opacity: 1;
+}
+
+
+.toggle{
+    display: none;
+}
+
+.toggle .showX{
+    display: none;
+}
+.toggle:hover .showX{
+    display: block;
+}
+.toggle:hover .static{
+    display: none;
+}
+
+/*----------------------------*/
+
+#container{
+    width: 100%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10%;
+}
+
+#VaundyTitle{
+    display: block;
+    width: 55%;
+    height: auto;
+    margin: 5% 0%;
+}
+
+.MainImage{
+    display: block;
+    width: 65%;
+    height: auto;
+    margin-bottom: 2%;
+}
+
+.MainImage .front{
+    position: relative;
+    z-index: 2;
+}
+
+
+
+/*---------------------------*/
+
+.WhiteBox{
+    background-color: #ffffff;
+    width: 90%;
+    max-width: 940px;
+    min-width: 680px;
+    height: auto;
+    border-radius: 50px;
+    margin: 50px;
+}
+
+
+#BioBox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height:450px;
+}
+
+#bio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5%;
+}
+
+#bioImage{
+    width: 100%;
+    max-height: 300px;
+}
+
+.innerText{
+    width: auto;
+    max-width: 500px;
+    height: 70%;
+    overflow: auto;
+    margin-right: 5%;
+}
+
+.innerText p{
+    margin-right: 5%;
+}
+
+.innerText::-webkit-scrollbar{
+    width: 13px;
+}
+.innerText::-webkit-scrollbar-thumb{
+    background-color: #FAC988;
+    border-radius: 10px;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+}
+.innerText::-webkit-scrollbar-track{
+    background-color: #F78A74;
+    border-radius: 10px;
+}
+
+
+/*----------------------------*/
+
+#DiscoBox{
+    display: flex;
+    flex-direction: column;
+    height:fit-content;
+    padding-bottom: 50px;
+}
+
+
+.discoList{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #F1F1F1;
+    height: 300px;
+    margin: 15px 0px;
+}
+
+#disImage{
+    display: block;
+    width: auto;
+    height: 100%;
+    margin: 0% 5%;
+}
+
+
+#disText{
+    margin-right: 5%;
+}
+
+
+/*----------------------------*/
+
+#linkBtn{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    margin: 50px 70px;
+}
+
+#linkBtn a{
+    width: 70px;
+}
+
+/*----------------------------*/
+
+
+footer{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+
+/*-----------------------------------------*/
+@media only screen and (Max-width: 900px)
+{
+    .WhiteBox{
+        max-width: 940px;
+        min-width: auto;
+    }
+
+    .menuLogo{
+        margin: 20px 25px;
+    }
+
+    .menuBar{
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .menuItems{
+        flex-direction: column;
+        align-items: flex-end;
+        width: 99%;
+        margin: 0px;
+        display: none;
+        z-index: 1;
+    }
+
+    .menuItems li{
+        width: 30%;
+        text-align: center;
+        padding: 10px;
+        margin: 5px;
+    }
+
+    .menuItems.active{
+        display: flex;
+    }
+
+    .toggle{
+        display: block;
+        position: absolute;
+        right: 5%;
+        margin-top: 25px;
+    }
+
+
+    /*------------------------*/
+
+
+    #linkBtn a{
+        width: 50px;
+    }
+}
+
+/*-----------------------------------------*/
+
+@media only screen and (Max-width: 700px){
+
+    #VaundyTitle{
+        width: 80%;
+    }
+    
+    .MainImage{
+        width: 90%;
+    }
+
+    #BioBox{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 50px;
+        height: fit-content;
+    }
+
+    #bio{
+        margin: 0;
+    }
+    
+    #bioImage{
+        width: 90%;
+        height: 100%;
+    }
+
+    /*------------------------*/
+
+
+    .WhiteBox{
+        width: 90%;
+        height: auto;
+        margin: 30px;
+        border-radius: 30px;
+    }
+    
+
+    .discoList{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #F1F1F1;
+        height: auto;
+        width: 100%;
+        margin: 15px 0px;
+    }
+    
+    #disImage{
+        display: block;
+        width: 100%;
+        max-width: 380px;
+        height: 100%;
+        margin-top: 5%;
+    }
+    
+    
+    #disText{
+        margin: 5%;
+    }
+
+
+
+
+    /*-----------------------*/
+
+
+    .innerText{
+        margin: 30px;
+    }
+
+    #linkBtn a{
+        max-width: 50px;
+        min-width: 30px;
+        margin: 0px 20px;
+    }
+
+}

@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;700&family=Playfair+Display:ital,wght@1,400;1,600&family=Roboto:wght@400;700;900&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+.title{
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin:30px;
+}
+
+.introName{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #ffff;
+}
+
+.heightT{line-height: 2.5;}
+.heightT2{line-height: 4;}
+.boldT{font-weight: 700;}
+.smallT{font-size: 0.8rem;}
+.centerT{text-align: center;}
+.whiteT{color: white;}
+
+.s1Blue1{background-color: #053CAF;}
+.s1Blue2{background-color: #032979;}
+.s1Blue3{background-color: #6B99F9;}
+
+.skyT{color: #6B99F9;}
+.pinkT{color: #F32B56;}
+
+.s2Red1{background-color: #6E1721;}
+.s2Red2{background-color: #4D1017;}
+.yellowT{color: #7bdd86;}
+.redT{color: #c06a74;}
+
+.s3green1{background-color: #34838d;}
+.s3green2{background-color: #0b6068;}
+.orangeT{color:#ff7462}
+.greenT{color:#87a6a8}
+
+/*--------------------------*/
+.menuBar{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+}
+
+.menuLogo{
+    width: 200px;
+    height: 40px;
+    margin-left: 25px;
+}
+
+.menuLogo .colorize{
+    display: none;
+}
+.menuLogo:hover .colorize{
+    display: block;
+}
+.menuLogo:hover .static{
+    display: none;
+}
+
+.menuItems, .menuItems2, .menuItems3{
+    display: flex;
+    list-style: none;
+    margin-right: 20px;
+}
+
+.menuItems li, .menuItems2 li, .menuItems3 li{
+    padding: 10px 20px;
+    border-radius: 15px;
+    margin: 0px 20px 0px 20px;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+    transition: 1s;
+}
+
+.menuItems li a,.menuItems2 li a, .menuItems3 li a{
+    text-align: center;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+#textP{
+    font-size: 1.3rem;
+}
+
+.menuItems li:hover{
+    background: #F32B56;
+    opacity: 1;
+}
+
+.menuItems2 li:hover{
+    background: #82aa86;
+    opacity: 1;
+}
+
+.menuItems3 li:hover{
+    background: #ff7462;
+    opacity: 1;
+}
+
+
+
+.toggle{
+    display: none;
+}
+
+.toggle .showX{
+    display: none;
+}
+.toggle:hover .showX{
+    display: block;
+}
+.toggle:hover .static{
+    display: none;
+}
+
+
+/*--------------------------*/
+
+
+#intro{
+    width: 100%;
+    margin: 0px auto;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#introScript{
+    flex-direction: column;
+    min-width: 40%;
+    padding: 30px;
+    margin: 8% 0px 8% 50px;
+}
+
+#introTitle{
+    max-width: 270px;
+    height: auto;
+    display: block;
+    margin-bottom: 50px;
+}
+
+#introImage{
+    max-width: 300px;
+    min-width: 300px;
+    height: auto;
+    display: block;
+    margin: 0px 50px 0px 0px;
+}
+
+/*--------------------------*/
+
+
+#container{
+    width: 100%;
+    margin: 0px auto;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.bgBox{
+    width: 940px;
+    min-width: 680px;
+    height:550px;
+    display: inline-flex;
+    flex-direction: row;
+    margin-bottom: 200px;
+    border-radius: 50px;
+    margin: 50px;
+}
+
+#mvBox{
+    width: 65%;
+    height: 450px;
+    margin: 25px 0px 50px 50px;
+}
+
+.videoWrap{
+    position:relative;
+    border-radius: 25px;
+    padding-bottom:56.25%;
+    height:0;
+    overflow:hidden;}
+
+.videoWrap iframe,.videoWrap object,.videoWrap embed{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;}
+
+
+/*--------------------------*/
+
+
+#lyricsBox, #lyricsBox2, #lyricsBox3{
+    width: 450px;
+    height: 400px;
+    overflow: auto;
+    margin: 80px 50px 50px 50px;
+}
+
+#lyrics{
+    flex-direction: column;
+    align-items:center;
+    overflow: auto;
+    text-align: center;
+    margin-right: 30px;
+}
+
+
+#lyricsBox::-webkit-scrollbar{
+    width: 13px;
+}
+#lyricsBox::-webkit-scrollbar-thumb{
+    background-color: #F32B56;
+    border-radius: 10px;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+}
+#lyricsBox::-webkit-scrollbar-track{
+    background-color: #053CAF;
+    border-radius: 10px;
+}
+
+#lyricsBox2::-webkit-scrollbar{
+    width: 13px;
+}
+#lyricsBox2::-webkit-scrollbar-thumb{
+    background-color: #7bdd86;
+    border-radius: 10px;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+}
+#lyricsBox2::-webkit-scrollbar-track{
+    background-color: #6E1721;
+    border-radius: 10px;
+}
+
+#lyricsBox3::-webkit-scrollbar{
+    width: 13px;
+}
+#lyricsBox3::-webkit-scrollbar-thumb{
+    background-color: #ff7462;
+    border-radius: 10px;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+}
+#lyricsBox3::-webkit-scrollbar-track{
+    background-color: #34838d;
+    border-radius: 10px;
+}
+
+#infoBox{
+    margin: 5% 0% 0% 2%;
+}
+
+/*-----------------------------------------*/
+
+footer{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.show{display: none;}
+.menuShow{display: none;}
+
+
+
+/*-----------------------------------------*/
+@media only screen and (Max-width: 900px)
+{
+    .menuBar{
+        position: sticky;
+        top: 0;
+        z-index: 2;
+    }
+
+    .menuLogo{
+        margin: 20px 25px;
+    }
+
+    .menuBar{
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .menuItems, .menuItems2, .menuItems3{
+        flex-direction: column;
+        align-items: flex-end;
+        width: 99%;
+        margin: 0px;
+        display: none;
+        z-index: 1;
+    }
+
+    .menuItems li, .menuItems2 li, .menuItems3 li{
+        width: 30%;
+        text-align: center;
+        padding: 10px;
+        margin: 5px;
+    }
+
+    .menuItems.active{
+        display: flex;
+    }
+
+    .menuItems2.active{
+        display: flex;
+    }
+
+    .menuItems3.active{
+        display: flex;
+    }
+
+    .toggle{
+        display: block;
+        position: absolute;
+        right: 5%;
+        margin-top: 25px;
+    }
+}
+
+/*-----------------------------------------*/
+
+
+@media only screen and (Max-width: 700px)
+{
+
+    .title{
+        margin: 50px;
+    }
+
+
+    #intro{
+        display: block;
+    }
+
+    #introScript{
+        width: 70%;
+        margin: auto;
+    }
+
+    #introTitle{
+        max-width: 200px;
+        margin-top: 80px;
+    }
+
+    #introImage{
+        max-width: 50%;
+        min-width: 0;
+        margin: auto;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        height: auto;
+    }
+
+
+    /*--------------------------*/
+
+
+    #container{
+        display: block;
+    }
+
+    .bgBox{
+        background-color: rgba(255, 255, 255, 0);
+        width: 100%;
+        min-width:0%;
+        height: fit-content;
+        display: inline-flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+    
+    #mvBox{
+        width: 90%;
+        height: 40%;
+        border-radius: 30px;
+        min-width: 0%;
+        margin: 30px;
+    }
+
+    .videoWrap{
+        padding-bottom:48.5%;
+        height:0;}
+
+    .videoWrap{
+        margin: 30px 30px 50px 30px;
+    }
+
+
+    #lyricsBox{
+        width: 90%;
+        height: auto;
+        border-radius: 30px;
+        margin: 30px;
+    }
+
+    #lyricsBox2{
+        width: 90%;
+        height: auto;
+        border-radius: 30px;
+        margin: 30px;
+    }
+
+    #lyricsBox3{
+        width: 90%;
+        height: auto;
+        border-radius: 30px;
+        margin: 30px;
+    }
+    
+
+    #lyrics{
+        margin: 30px;
+    }
+
+    #infoBox2{
+        width: 90%;
+        border-radius: 30px;
+        margin: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .hidden{
+        display: none;
+    }
+
+    .show{
+        display: block;
+    }
+
+}
